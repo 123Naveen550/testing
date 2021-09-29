@@ -1,0 +1,10 @@
+<div class="container">
+    <button class="btn btn-success" (click)="onCreateBlock()">Create block</button>
+
+    <div *ngIf="isValid ; else elseblock">Hii ngif is apply</div>
+
+    <ng-template #elseblock>
+        <div>Else work </div>
+
+    </ng-template>
+</div>

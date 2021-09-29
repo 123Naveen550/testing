@@ -1,0 +1,12 @@
+<div *ngIf="product.length>0">
+<div  *ngFor="let data of product"class="card" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+     <ng-content></ng-content>
+      <p class="card-text">{{data['username']}}</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    
+    </div>
+  </div>
+  
+    
